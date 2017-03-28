@@ -14,6 +14,14 @@ function tf(num) {
   return num.toLocaleString();
 }
 
+//解法3：
+function tf(num) {
+  let sNum = num && num.toString();
+  return sNum.replace(/(\d)(?=(\d{3})+\.)/g, function($0, $1) {
+    return $1 + ',';
+  })
+}
+
 1000000..toLocaleString();
 1000000.0.toLocaleString();
 [1000000].toLocaleString();
