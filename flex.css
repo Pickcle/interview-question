@@ -1,0 +1,24 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 800px;
+}
+
+#left {
+  width: 200px;
+  height: 100%;
+  background-color: red;
+}
+
+#center {
+  height: 100%;
+  background-color: green;
+}
+
+#right {
+  width: 200px;
+  height: 100%;
+  background-color: blue;
+}
